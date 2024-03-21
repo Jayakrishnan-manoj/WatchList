@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -68,4 +70,12 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 //    implementation ("com.google.accompanist:accompanist-pager:0.24.13-rc")
     implementation ("com.google.accompanist:accompanist-pager:0.27.1")
+
+    implementation ("com.google.firebase:firebase-auth-ktx:22.3.1")
+    implementation ("com.google.android.gms:play-services-auth:21.0.0")
+
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation ("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+    implementation ("androidx.navigation:navigation-compose:2.7.7")
+    implementation ("io.coil-kt:coil-compose:2.2.2")
 }
